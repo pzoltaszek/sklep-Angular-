@@ -1,0 +1,49 @@
+<div class="bodyDiv">
+<!-- <div class="btn-group mr-3"> -->
+
+  <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+    <button class="navButton"routerLink = "/dashboard">Nawigation</button>
+    <button class="navButton" ngbDropdownToggle></button>
+    <div class="dropdown-menu" ngbDropdownMenu>
+      <a class="nav-link" routerLink = "/dashboard" style="font-weight: bold">Dashboard</a>
+      <hr>
+      <a class="nav-link" routerLink = "/dashboard">Dashboard</a>
+      <a class="nav-link" routerLink = "/productsManage">Products Manage</a>
+    </div>
+  </div>
+
+  <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+      <button class="navButton"routerLink = "/products">All Products</button>
+  </div>
+
+  <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+      <button class="navButton"routerLink = "/dairy">Dairy</button>
+    <button class="navButton" ngbDropdownToggle></button>
+    <div class="dropdown-menu" ngbDropdownMenu>
+        <a class="nav-link" routerLink = "/dairy" style="font-weight: bold">All dairy</a>
+        <hr>
+      <a class="nav-link" routerLink = "/dairy/milk">Milk</a>
+      <a class="nav-link" routerLink = "/dairy/cheese">Cheese</a>
+      <a class="nav-link" routerLink = "/dairy/yoghurt">Yoghurt</a>
+    </div>
+  </div>
+
+  <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+      <button class="navButton"routerLink = "/fruitsAndVegetables">Fruits and Vegetables</button>
+    <button class="navButton" ngbDropdownToggle></button>
+    <div class="dropdown-menu" ngbDropdownMenu>
+        <a class="nav-link" routerLink = "/fruitsAndVegetables" style="font-weight: bold">All</a>
+        <hr>
+      <a class="nav-link" routerLink = "/fruits">Friuts</a>
+      <a class="nav-link" routerLink = "/vegetables">Vegetables</a>
+    </div>
+  </div>
+
+  <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+      <button class="navButton"routerLink = "/cart">Cart</button>
+  </div>
+
+
+
+<!-- </div> -->
+</div>

@@ -1,0 +1,170 @@
+ @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.buttonPlus {
+  font-size: 11px;
+  font-weight: bold;
+  width: 3em;
+  height: 3em;
+  text-align: center;
+  border: 1px solid rgb(150, 30, 190);
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: violet; 
+}
+
+.buttonPlus:focus {
+  outline: none;
+  border: 1px solid rgb(150, 30, 190);
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.buttonPlus:hover {
+  cursor: pointer;
+  background-color: rgb(150, 30, 190);
+  border: 1px solid violet;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  color: white;
+}
+
+.buttonMinus {
+  font-size: 11px;
+  font-weight: bold;
+  width: 3em;
+  height: 3em;
+  text-align: center;
+  border: 1px solid rgb(150, 30, 190);
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  background-color: violet;
+}
+
+.buttonMinus:focus {
+  outline: none;
+  border: 1px solid rgb(150, 30, 190);
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.buttonMinus:hover {
+  cursor: pointer;
+  background-color: rgb(150, 30, 190);
+  border: 1px solid violet;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  color: white;
+}
+
+input {
+  font-size: 11px;
+  font-weight: bolder;
+  width: 5em;
+  height: 3em;
+  text-align: center;
+  border: 1px solid rgb(150, 30, 190);
+}
+
+.addToCartButton {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  width: 10em;
+  height: 3em;
+  text-align: center;
+  border: 1px solid violet;
+  border-radius: 1em;
+  background-color: rgb(150, 30, 190);
+}
+
+.addToCartButton:hover {
+  cursor: pointer;
+  background-color: violet;
+  border: 1px solid rgb(150, 30, 190);
+  border-radius: 1em;
+  color: black;
+}
+
+.addToCartButton:focus {
+  outline: none;
+
+}
+.addToCartButton:active{
+  animation-name: buttonAddPressed;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes buttonAddPressed {
+  0% { border: 1px solid rgb(150, 30, 190);
+    background-color: violet;}
+  50% {border: 6px solid violet;
+    background-color: rgb(150, 30, 190); }
+  100% {border: 1px solid rgb(150, 30, 190);
+    background-color: violet; }
+}
+
+.productTable {
+  margin: auto;
+  width: 40%;
+  margin-bottom: 0.5em; padding: 2em;
+  border: 2px solid rgb(150, 30, 190);
+}
+
+.productTable td {
+  height: 3em;
+  width: 45%;
+  border-bottom: 1px solid rgb(150, 30, 190);
+  text-align: left;
+  padding: 0.5em;
+}
+
+.productTable #mainTr {
+  border: 1px solid rgb(150, 30, 190);
+}
+
+#buttons {
+  text-align: center;
+  border-bottom: none;
+}
+
+ #buttons:hover {
+  background-color: rgb(248, 245, 248);
+} 
+
+#productTitle {
+  text-align: center;
+  font-size: 16;
+}
+#productTitle:hover {
+  cursor: pointer;
+  text-align: center;
+  font-size: 16;
+  color:rgb(150, 30, 190);
+  background-color: rgb(233, 188, 233);
+}
+
+ #rysunekTd{
+  text-align: center;
+}
+.tip {
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.tip span {
+  display: none;
+}
+
+.tip:hover span {
+    display: block;
+    z-index: 1;
+    background: violet; 
+    left: 3em;
+    width: 4em;
+    position: absolute;
+    text-decoration: none;
+    top: 120%;
+    right: 100%;
+}

@@ -1,0 +1,48 @@
+<div *ngIf="product">
+    <h2>Product details</h2>
+    <h2>{{product.name | uppercase}}</h2>
+</div>
+<br>
+<button class="addToCartButton" (click)="goBack()">go back</button>
+<br>
+<br>
+<table class="productTable" *ngIf="product">
+    <tr id="mainTr">
+        <td>
+            <tr>
+                <td id="productTitle">
+                    <b>{{product.name}}</b>
+                </td>
+            </tr>
+            <tr>
+                <td>price: {{product.price}}/{{product.unit}}</td>
+            </tr>
+            <tr>
+                <td>producent: {{product.producent}}</td>
+            </tr>
+            <tr>
+                <td>category: {{product.category}}</td>
+            </tr>
+            <tr>
+                <td>subcategory: {{product.subcategory}}</td>
+            </tr>
+            <tr>
+                <td>product id: {{product.id}}</td>
+            </tr>
+            <tr>
+                <td>description {{product.description}}</td>
+            </tr>
+            <tr>
+                <td id="buttons">
+                    <button class="buttonMinus" (click)="minusAmount(product)">-</button>
+                    <input [(ngModel)]="product.amount" placeholder="amount" class="inputClass">
+                    <button class="buttonPlus" (click)="plusAmount(product)">+</button>
+                    <button class="addToCartButton" (click)="addToActualCart(product)">add to cart</button>
+                    <div id="message{{product.id}}" style="visibility:hidden">Choose value between 1-99</div>
+                </td>
+            </tr>
+        </td>
+        <td id="rysunekTd">
+            <img src="../assets/glyphicons/glyphicons-1-glass.png">rysunek produktu</td>
+    </tr>
+</table>

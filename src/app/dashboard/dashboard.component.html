@@ -1,0 +1,22 @@
+<h2>Recommended products</h2>
+
+<div  *ngFor="let product of products" class="container">
+<table class="productTable" routerLink="/detail/{{product.id}}" >
+            <tr >
+                <td >
+                    <b>{{product.name}}</b>
+                    <br>
+                    <b>price: {{product.price}}/{{product.unit}}</b>
+                </td>
+            </tr>
+            <tr class="imageTag">
+                <td >
+                    <img src="../assets/glyphicons/glyphicons-1-glass.png">
+                </td>
+            </tr>
+</table>
+</div>
+<br><br><br><br><br>
+
+<div class="add"><h3>Promocja!</h3></div>
+

@@ -1,0 +1,28 @@
+<h2>Products manage</h2>
+<br><br>
+<div>
+    <label>Product name:
+      <input #productName />
+    </label>
+    <button (click)="add(productName.value); productName.value=''">
+      +
+    </button>
+  </div>
+<br><br>
+<button routerLink = "/dashboard" class="aaa">Dashboard link
+   <span class="tooltiptext"><img class="imageWarning" src="../assets/Warning.png">Tooltip text</span>
+</button>
+
+<table class="table table-hover">
+    <tr><th>id</th><th>name</th><th>opcje</th></tr>
+  <tr *ngFor="let product of products">
+    <td>{{product.id}} </td>
+    <td>{{product.name}}</td>
+  
+    <td>
+    <button class="btn btn-danger" (click)="delete(product)">Delete</button>
+  
+    <button class="btn btn-primary" routerLink="/detail/{{product.id}}">Details</button>
+    </td>
+  </tr>
+  </table>

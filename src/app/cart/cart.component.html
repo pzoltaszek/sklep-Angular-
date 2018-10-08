@@ -1,0 +1,20 @@
+<h2>Your Cart</h2>
+
+<p id="sum">Sum: {{sum | number: '1.1-2'}}</p>
+<br><br>
+<table class="table table-hover">
+    <tr><th>id</th><th>products</th><th>quantity</th><th>price</th><th>opcje</th></tr>
+  <tr *ngFor="let product of actualCart">
+    <td>{{product.id}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.amount}}</td>
+    <td>{{product.price * product.amount | number : '1.1-2'}}</td>
+    <td>
+    <button class="btn btn-success" (click)="plusAmount(product)">plus</button>
+    <button class="btn btn-primary" (click)="minusAmount(product)">minus</button>
+    </td>
+    <td>
+      <button class = "btn btn-danger" (click)="removeFromCart(product)">Remove</button>
+    </td>
+  </tr>
+  </table>

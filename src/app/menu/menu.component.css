@@ -1,0 +1,66 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.bodyDiv {
+    background-color: rgb(150, 30, 190);
+    height: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: right;
+    justify-content: center
+}
+.btn-group {
+  cursor: pointer;
+  border-left: 2px solid white; 
+  border-right: 2px solid white; 
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    background-color: rgb(150, 30, 190);
+    border-radius: 8 px;
+    border-collapse: collapse;
+    height: 3em;
+    margin: auto; 
+
+}
+  div a:visited, a:link {
+    color: black;
+  }
+  div a:hover {
+    color: black;
+    background-color: violet;
+  }
+  div a.active {
+    color: black;
+  }
+
+  .navButton {
+    border-left: none;
+    border-right: 1px solid white;
+    border-top: none;
+    border-bottom: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(150, 30, 190);
+    border-radius: 8 px;
+    border-collapse: collapse;
+    height: 3em;
+    margin: auto;
+    cursor: pointer;
+
+  }
+  .navButton:hover{
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+    background-color: violet;
+    border-radius: 8 px;
+    border-collapse: collapse;
+  }
+
+  .navButton:focus {
+    background-color:violet;
+    border: 1px solid white;
+    outline: none;
+  }
+

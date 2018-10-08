@@ -1,0 +1,36 @@
+<h2>
+    Fruits products</h2>
+<br>
+<br>
+<table class="productTable" *ngFor="let product of fruitsProducts">
+    <tr id="mainTr">
+        <td>
+            <tr>
+                <td id="productTitle" routerLink="/detail/{{product.id}}">
+                    <a class="tip">{{product.name}}
+                        <span>Details</span>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>price:
+                    <b>{{product.price}}/{{product.unit}}</b>
+                </td>
+            </tr>
+            <tr>
+                <td>producent: {{product.producent}}</td>
+            </tr>
+            <tr>
+                <td id="buttons">
+                    <button class="buttonMinus" (click)="minusAmount(product)">-</button>
+                    <input [(ngModel)]="product.amount" placeholder="amount" class="inputClass">
+                    <button class="buttonPlus" (click)="plusAmount(product)">+</button>
+                    <button class="addToCartButton" (click)="addToActualCart(product)">add to cart</button>
+                    <div id="message{{product.id}}" style="visibility:hidden">Choose value between 1-99</div>
+                </td>
+            </tr>
+        </td>
+        <td id="rysunekTd">
+            <img src="../assets/glyphicons/glyphicons-1-glass.png">rysunek produktu</td>
+    </tr>
+</table>

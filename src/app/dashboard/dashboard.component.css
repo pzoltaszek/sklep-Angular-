@@ -1,0 +1,42 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+  .productTable {
+    float: left;
+    margin: 1em;
+    width: 20%;
+    border: 2px solid rgb(150, 30, 190);
+  }
+  .productTable:hover {
+    cursor: pointer;
+    background-color: violet;
+  }
+
+  .productTable td {
+    text-align: center;
+  }
+
+  .productTable tr {
+     height: 4em;
+  }
+
+  .productTable .imageTag {
+    font-size: 12;
+    height: 10em;
+  }
+
+  .add{
+    display: inline-block;
+    width: 100%;
+    height: 4em;
+    background-color: blueviolet;
+    color: white;
+    
+  }
+
+  .add:hover {
+    cursor: pointer;
+    color: rgb(150, 30, 190);
+    background-color: violet;
+    border: 2px solid rgb(150, 30, 190);
+  }
+
